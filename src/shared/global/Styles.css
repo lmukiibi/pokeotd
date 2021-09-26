@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --clr-background: #a3d4d4;
+  --clr-primary: #2875a5;
+  --clr-primary-dark: #05314c;
+  --clr-secondary: #333;
+  --clr-secondary-light: white;
+  --clr-accent: #b92e2a;
+  --clr-accent-dark: hsl(2, 66%, 35%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  margin-inline: 2em;
+}
+
+
+.sectionStyle{
+    margin: 1em 3em;
+    padding: 1em;
+    max-width: 40em;
+
+}
+
+.section-sc-style{
+
+    margin: 1em 3em;
+    padding: 1em;
+    max-width: 40em;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.center-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center
+{   
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pokecard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sectionstyle{
+    background-color: white;
+    padding: 1em;
+    border-color: rgba(250,250,250, 0.5);
+    
+    /* prop: horizontal vertical blur color */
+    box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    max-width: 15em;
+}
+#sectionstyle2{
+    background-color: white;
+    padding: 1em;
+    border-color: rgba(250,250,250, 0.5);
+    
+    /* prop: horizontal vertical blur color */
+    box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    max-width: 40em;
+}

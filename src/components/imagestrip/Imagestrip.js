@@ -7,5 +7,5 @@ export const Imagestrip = () => {
         <div>
             
         </div>
-    )
+    ) 
 }
