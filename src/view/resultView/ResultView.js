@@ -5,6 +5,7 @@ import PokemonAPIService from "../../shared/api/service/PokemonAPIService"
 import { useDebounce } from "../../shared/hooks/useDebounce"
 import RoutingPath from "../../routes/RoutingPath"
 import bgpic from "../../shared/img/manypokemons.jpg"
+import { useLocation } from 'react-router'
 
 import "../../shared/global/Styles.css"
 import "./ResultView.css"
@@ -16,8 +17,9 @@ export const ResultView = () => {
     const [username, setUsername] = useState();
     const debounceValue = useDebounce(username,2000);
 
+    const Location = useLocation();
     const history = useHistory();   
-    const fromBrowser = localStorage.getItem("username");
+
     
     const fetchData = async () => {
         try {
@@ -37,6 +39,7 @@ export const ResultView = () => {
         fetchData();
     }, [])
 
+    
     const randomNumber = () => {
         const min = Math.ceil(100);
         const max = Math.floor(1);
@@ -62,7 +65,7 @@ export const ResultView = () => {
         <main>
             <div className="center">
                 <div>
-                    <h2 id="sectionstyle2">Congratulations <span className="name-style">{fromBrowser}</span> your pokemon of the day is </h2>
+                    <h2 id="sectionstyle2">Congratulations <span className="name-style">{Location.state}</span> your pokemon of the day is </h2>
                 </div>
                 <br/>
 

@@ -22,9 +22,9 @@ export const HomeView = () => {
 
     const Generate = () => {
         setAuthenticatedUser(username);
-        localStorage.setItem("username", username);
-        history.push(RoutingPath.resultView);
+        history.push(RoutingPath.resultView, username);
     };
+
 
     
     const fetchData = async () => {
